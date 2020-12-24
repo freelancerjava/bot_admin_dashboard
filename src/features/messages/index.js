@@ -6,3 +6,4 @@ export { default as Review } from './Review';
 export { default as Question } from './Question';
 export { default as Favourite } from './Favourite';
 export { default as Autoreply } from './Autoreply';
+export { default as Message } from './Message';

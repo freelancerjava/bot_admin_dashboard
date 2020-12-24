@@ -39,6 +39,7 @@ export default function MessagesList() {
                 <thead className="text-primary">
                   <tr>
                     <th>ID</th>
+                    <th>User</th>
                     <th>Текст</th>
                     <th>Дата</th>
                     <th>Тип</th>
@@ -50,6 +51,7 @@ export default function MessagesList() {
                     return (
                       <tr key={key}>
                         <td>{item.visitor.id}</td>
+                        <td>{item.visitor.username}</td>
                         <td>{item.text}</td>
                         <td>{item.created_at}</td>
                         <td>{item.type.name}</td>

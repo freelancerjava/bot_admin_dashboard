@@ -9,6 +9,7 @@ import MessagesList from './MessagesList';
 import Offer from './Offer';
 import Question from './Question';
 import Review from './Review';
+import Message from './Message';
 
 export default {
   path: 'messages',
@@ -22,5 +23,6 @@ export default {
     {icon: "fa fa-question-circle", path: "question", component: Question, name: "Вопросы"},
     {icon: "fa fa-bookmark", path: "favourite", component: Favourite, name: "Избранные"},
     {icon: "fa fa-recycle", path: "autoreply", component: Autoreply, name: "Автоответчик"},
+    {icon: "fa fa-envelope", path: "item/:id", component: Message, name: "Запрос"},
   ],
 };
